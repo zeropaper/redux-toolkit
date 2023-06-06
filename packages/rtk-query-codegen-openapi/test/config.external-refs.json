@@ -1,0 +1,5 @@
+{
+  "schemaFile": "./fixtures/external-refs.yml",
+  "apiFile": "./fixtures/emptyApi.ts",
+  "outputFile": "./tmp/example.ts"
+}

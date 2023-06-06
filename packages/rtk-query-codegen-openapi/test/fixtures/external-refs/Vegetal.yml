@@ -1,0 +1,10 @@
+Vegetal:
+  type: object
+  allOf:
+    - $ref: './Living.yml#/Living'
+    - type: object
+      required: 
+        - seeds
+      properties:
+        seeds:
+          type: string

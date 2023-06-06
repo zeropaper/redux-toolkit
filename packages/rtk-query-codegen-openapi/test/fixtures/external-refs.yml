@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: allOf fixture
+  description: |
+    This is aimed for tests
+  version: 1.0.0
+servers:
+  - url: /api/v3
+paths:
+  /test:
+   get:
+    responses:
+      '200':
+        description: OK
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: './Vegetal.yml#/Vegetal'
+                - $ref: './Animal.yml#/Animal'

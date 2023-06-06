@@ -1,0 +1,10 @@
+Animal:
+  type: object
+  allOf:
+    - $ref: './Living.yml#/Living'
+    - type: object
+      required: 
+        - legs
+      properties:
+        legs:
+          type: number

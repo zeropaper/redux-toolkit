@@ -1,0 +1,7 @@
+Living:
+  type: object
+  required:
+    - averageLifeDuration
+  properties:
+    averageLifeDuration:
+      type: number

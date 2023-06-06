@@ -76,4 +76,10 @@ Done
     const out = await cli([`./config.invalid-example.json`], __dirname);
     expect(out.stderr).toContain("Error: path parameter petId does not seem to be defined in '/pet/{petId}'!");
   }, 25000);
+
+  test('external refs doesnt fail', async () => {
+    const out = await cli([`./config.external-refs.json`], __dirname);
+    console.info('out', out);
+    expect(out.stderr).toContain("Error: path parameter petId does not seem to be defined in '/pet/{petId}'!");
+  }, 25000);
 });
